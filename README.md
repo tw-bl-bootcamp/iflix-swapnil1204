@@ -1,4 +1,4 @@
-# iFlix
+# iFlix 🍿
 ## Summary
 iFlix is a movie booking app which allows users to select from a list of movie shows  and book any available seats using an intuitive online interface.
 
