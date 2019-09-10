@@ -3,7 +3,6 @@
 c
 ## Problem Statement
 Gotham City has twelve movie theatres, spread across the different areas. Some of the theatres have come together to provide an easier experience to customers to book movie tickets online.
-
 The main User Requirements for the online app were captured in the following cards:
 
 * As a user I should be able to login using my email id and password.
