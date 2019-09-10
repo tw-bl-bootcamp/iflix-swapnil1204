@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Gotham City has twelve movie theatres, spread across the different areas. Some of the theatres have come together to provide an easier experience to customers to book movie tickets online.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Swapnil V. Bamb",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "mocha": "^6.2.0",
+    "mongoose": "^5.7.0",
+    "mongoose-schema": "0.0.7",
+    "mongoose-validator": "^2.1.0",
+    "nodemailer": "^6.3.0",
+    "nodemon": "^1.19.2"
+  }
+}

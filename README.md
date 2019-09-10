@@ -1,7 +1,6 @@
 # iFlix 🍿
 ## Summary
-iFlix is a movie booking app which allows users to select from a list of movie shows and book any available seats using an intuitive online interface.
-
+c
 ## Problem Statement
 Gotham City has twelve movie theatres, spread across the different areas. Some of the theatres have come together to provide an easier experience to customers to book movie tickets online.
 
