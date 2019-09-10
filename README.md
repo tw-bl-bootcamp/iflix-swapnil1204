@@ -1,6 +1,6 @@
 # iFlix 🍿
 ## Summary
-iFlix is a movie booking app which allows users to select from a list of movie shows  and book any available seats using an intuitive online interface.
+iFlix is a movie booking app which allows users to select from a list of movie shows and book any available seats using an intuitive online interface.
 
 ## Problem Statement
 Gotham City has twelve movie theatres, spread across the different areas. Some of the theatres have come together to provide an easier experience to customers to book movie tickets online.
@@ -17,22 +17,17 @@ The main User Requirements for the online app were captured in the following car
 _TBD Please update as per stack choices being used in your private project repo_
 
 ### Languages
-* Java
 * Javascript
 * HTML 5
 * CSS 3
 
 ### Frameworks
-* Springboot / Nodejs / Express
-* React / Angular
-* JUnit 5 / Mockito / Mocha
+* Nodejs / Express
+* Angular
+* Mocha
 
 ### Infra
 * MongoDB
-* MySQL
-* RabbitMQ
-* Redis
-* Jenkins
 
 ## Useful Commands
 _TBD - Please enter the commands to build, test and run the app at the very least below_
