@@ -1,11 +1,17 @@
+const userService = require('../service/user')
 exports.login = (req, res) => {
-    var response = {};
-    response.success = true;
-    response.message = "login successfull";
-    var result = {
-        username:"swapnil.bamb@Thoughtworks.com",
-        password:"bamb"
+    try {
+        const credentials = req.body;
+        userService.login(credentials, (err, result) => {
+            if (result!=null) {
+                var response = {};
+                response.success = true;
+                response.message = "login successfull";
+                response.data = result;
+                res.status(200).send(response);
+            }
+        })
+    } catch (error) {
+        res.status(500).send("something went wrong");
     }
-    response.data = result;
-    res.status(200).send(response);
 }
