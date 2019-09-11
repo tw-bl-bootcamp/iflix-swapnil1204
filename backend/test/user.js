@@ -15,4 +15,14 @@ describe('/post login ', () => {
             })
         done();
     })
+    it(" Login function send expected message", (done) => {
+        let data = {username: "swapnil.bamb@Thoughtworks.com", password: "swapnil@1111S"}
+        chai.request(server)
+            .post('/login')
+            .send(data)
+            .end((err, res) => {
+                assert.equal(res.body.message,"login successfull");
+            })
+        done();
+    })
 });
