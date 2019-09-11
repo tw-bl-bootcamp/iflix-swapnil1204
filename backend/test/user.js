@@ -57,4 +57,17 @@ describe('/post login ', () => {
             })
         done();
     })
+    it("res is a object", (done) => {
+        var data = {
+            "email":"swapnil.bamb@thoughtworks.com",
+            "password":"swapnil@123S"
+        }
+        chai.request(server)
+            .post('/login')
+            .send(data)
+            .end((err, res) => { 
+                assert.isObject(res);
+            })
+        done();
+    })
 });
