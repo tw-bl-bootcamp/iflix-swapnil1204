@@ -11,5 +11,5 @@ var server = http.listen(process.env.port, function () {
     console.log(`listening on localhost:${process.env.port}`);
 });
 /** Configuring the database. */
-const dbConfig = require('../backend/configs/Database.config.js');
+const dbConfig = require('../backend/config/database.config');
 dbConfig.connection();
