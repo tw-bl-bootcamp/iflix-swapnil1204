@@ -12,6 +12,8 @@ var server = app.listen(process.env.port, function () {
     console.log(`listening on localhost:${process.env.port}`);
 });
 
+const cors =require('cors');
+
 /** Configuring the database. */
 const dbConfig = require('../backend/config/database.config');
 dbConfig.connection();
