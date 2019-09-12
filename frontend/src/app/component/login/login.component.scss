@@ -1,0 +1,35 @@
+@import "../../scss/constant.scss";
+
+:host ::ng-deep .mat-card {
+  background: #fff;
+  color: rgb(8, 8, 116);
+}
+
+.form_height {
+  @include form_height;
+}
+
+.font_of_Signin {
+  @include font_of_Signin;
+}
+
+.font_of_with_your_iflixaccount {
+  color: midnightblue;
+  font-weight: 400;
+}
+
+.font_iFlix {
+  @include font_iFlix;
+}
+
+.anchor {
+  @include anchor_color;
+}
+
+:host ::ng-deep .mat-raised-button.mat-primary {
+  background-color: #1a73e8;
+}
+
+:host ::ng-deep .mat-form-field-flex {
+  width: 345px;
+}

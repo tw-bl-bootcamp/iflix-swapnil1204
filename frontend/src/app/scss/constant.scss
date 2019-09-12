@@ -1,0 +1,23 @@
+$_formHeight:96vh;
+
+@mixin font_iFlix() {
+  font-size: 22px;
+  font-style: normal;
+  color: midnightblue;
+  font-weight: 600;
+}
+
+@mixin form_height {
+  height: 96vh;
+}
+
+@mixin anchor_color {
+  color: #1a73e8;
+}
+
+@mixin font_of_Signin {
+  color: orangered;
+  font-size: 20px;
+  font-style: inherit;
+  font-weight: 500;
+}
