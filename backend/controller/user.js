@@ -1,4 +1,5 @@
-const userService = require('../service/user')
+const userService = require('../service/user');
+const tokenGeneration = require('../middleware/tokenGeneration');
 exports.login = (req, res) => {
     try {
         const credentials = req.body;
@@ -8,6 +9,11 @@ exports.login = (req, res) => {
                 response.success = true;
                 response.message = "login successfull";
                 response.data = result;
+                const payload = {
+                    user_id: result._id
+                }
+                const token = tokenGeneration.generateToken(payload);
+                response.token = token;
                 res.status(200).send(response);
             }
         })
