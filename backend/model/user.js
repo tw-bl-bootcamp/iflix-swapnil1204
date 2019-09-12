@@ -3,9 +3,6 @@ const mongoose = require('mongoose');
 
 const validate = require('mongoose-validator');
 
-/**bcrypt to implement hash functionality */
-const bcrypt = require('bcrypt');
-
 let saltRounds = 10;
 
 /**setting to useCreateIndex true */
@@ -87,27 +84,18 @@ const userSchema = mongoose.Schema({
 });
 
 var userDatas = mongoose.model('userdatas', userSchema);
-
-function hash(password) {
-    var hash = bcrypt.hashSync(password, saltRounds);
-    return hash;
-}
 class UserModel {
     login(loginParam, callback) {
         try {
             userDatas.findOne({
-                "email": loginParam.email
+                $and: [{
+                    "email": loginParam.email
+                }, {
+                    "password": loginParam.password
+                }]
             }, (error, data) => {
-                if (error) {
-                    callback(error);
-                } else {
-                    bcrypt.compare(loginParam.password, data.password, (error, result) => {
-                        if (error) {
-                            callback(error);
-                        } else {
-                            callback(null, data);
-                        }
-                    });
+                if (data != null) {
+                    callback(null, data);
                 }
             })
         } catch (error) {
