@@ -39,6 +39,7 @@ export class LoginComponent implements OnInit {
         this.showSucessMessage = true;
         setTimeout(() => this.showSucessMessage = false, 4000);
         console.log(res);
+        this.router.navigate(['/dashboard'])
       },
       err => {
           this.serverErrorMessages = 'Something went wrong!';

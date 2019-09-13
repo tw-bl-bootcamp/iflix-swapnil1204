@@ -10,4 +10,8 @@ export class HttpService {
     let response = this.http.post(environment.baseUrl + url, user);
     return response;
   }
+  userGetRequest(url) {
+    let response = this.http.get(environment.baseUrl + url);
+    return response;
+  }
 }

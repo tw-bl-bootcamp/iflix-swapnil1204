@@ -9,12 +9,12 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {FormsModule,ReactiveFormsModule } from '@angular/forms';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
-import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {HttpClientModule} from '@angular/common/http';
-import  {LoginComponent} from './component/login/login.component'
+import  {LoginComponent} from './component/login/login.component';
+import {MatToolbarModule} from '@angular/material'
 @NgModule({
   declarations: [LoginComponent],
   imports: [
