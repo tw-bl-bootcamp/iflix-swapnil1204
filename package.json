@@ -1,0 +1,19 @@
+{
+  "name": "iflix-swapnil1204",
+  "version": "1.0.0",
+  "description": "c ## Problem Statement Gotham City has twelve movie theatres, spread across the different areas. Some of the theatres have come together to provide an easier experience to customers to book movie tickets online. The main User Requirements for the online app were captured in the following cards:",
+  "main": "index.js",
+  "scripts": {
+    "start":"concurrently \"cd backend && npm start\" \"cd frontend && ng serve -o\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tw-bl-bootcamp/iflix-swapnil1204.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tw-bl-bootcamp/iflix-swapnil1204/issues"
+  },
+  "homepage": "https://github.com/tw-bl-bootcamp/iflix-swapnil1204#readme"
+}
