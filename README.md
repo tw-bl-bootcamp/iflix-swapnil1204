@@ -32,12 +32,12 @@ _TBD - Please enter the commands to build, test and run the app at the very leas
 
 * Build
 
-```
-
+```go to backend
+npm i
 ```
 
 * Test
-
+npm run test
 ```
 
 ```
@@ -49,7 +49,7 @@ _TBD - Please enter the commands to build, test and run the app at the very leas
 ```
 
 * Run
-
+npm start
 ```
 
 ```
