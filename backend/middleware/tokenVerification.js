@@ -1,7 +1,7 @@
 var jwt = require('jsonwebtoken');
 class TokenVerification {
     constructor() {}
-    checkToken(req, res, next) {
+    verifyToken(req, res, next) {
         try {
             var auth = req.headers['token'];
             if (auth) {
